@@ -3,7 +3,7 @@ $db = "'localhost','root','','project'";
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header('location:login.php');
+    header('location:../login.php');
 }
 
 ?>
@@ -20,40 +20,40 @@ if(!isset($_SESSION['username'])){
     <title>Mak || About us</title>
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-touch-icon.png">
     
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="../image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
     
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="../image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
     
-    <link rel="manifest" href="assets/favicons/manifest.json">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     
     <!-- Font awesome CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
     
     <!-- OwlCarousel CSS -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css">
     
     <!-- SlickNav CSS -->
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.min.css">
     
     <!-- Magnific popup CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
     
     <!-- Scroll CSS -->
-    <link rel="stylesheet" href="assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/perfect-scrollbar.min.css">
     
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
 </head>
 <body>
@@ -67,49 +67,18 @@ if(!isset($_SESSION['username'])){
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="header-top-left">
-                            <div class="dropdown">
-                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdowncur" data-toggle="dropdown" aria-haspopup="true">
-                                USD
-                                    <i class="fa fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdowncur">
-                                    <li>USD</li>
-                                    <li>EURO</li>
-                                    <li>BDT</li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
-                                English
-                                    <i class="fa fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownlang">
-                                    <li>English</li>
-                                    <li>French</li>
-                                    <li>Arabic</li>
-                                    <li>Chinese</li>
-                                </ul>
-                            </div>
+                           
+                        
                         </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="header-top-right">
-                            <!-- <a href="about.html#">
-                                <i class="fa fa-shopping-cart"></i>
-                                cart
-                            </a> -->
+                            
                             <a href="about.html#">
                                 <i class="fa fa-user"></i>
                                 My Account
                             </a>
-                            <!-- <a href="login.html">
-                                <i class="fa fa-sign-in"></i>
-                                login
-                            </a>
-                            <a href="registration.html">
-                                <i class="fa fa-user-plus"></i>
-                                register
-                            </a> -->
+                           
                         </div>
                     </div>
                 </div>
@@ -124,35 +93,33 @@ if(!isset($_SESSION['username'])){
                                 <nav>
                                     <ul id="navigation_menu">
                                         <li>
-                                            <a href="index.php">Home</a>
+                                            <a href="../index.php">Home</a>
                                         </li>
                                         <li class="current-page-item">
-                                            <a href="about.php">about</a>
+                                            <a href="pages/about.php">about</a>
                                         </li>
                                         <li>
-                                            <a href="fixture.php">fixture</a>
+                                            <a href="pages/fixture.php">fixture</a>
                                             <ul>
-                                                <li><a href="fixture.php">Fixtures</a></li>
-                                                <li><a href="single-fixture.php">Fixtures details</a></li>
+                                                <li><a href="pages/fixture.php">Fixtures</a></li>
+                                                <li><a href="pages/single-fixture.php">Fixtures details</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="player.php">Player</a>
                                             <ul>
-                                                <li><a href="player.php">players</a></li>
-                                                <li><a href="player-details.php">player details</a></li>
+                                                <li><a href="pages/player.php">players</a></li>
+                                                <li><a href="pages/player-details.php">player details</a></li>
                                             </ul>
                                         </li>
-                                        <!-- <li>
-                                            <a href="gallery.html">gallery</a>
-                                        </li> -->
+                                       
                                     </ul>
                                 </nav>
                             </div>
                             <div class="kick-site-logo">
                                 <div class="responsive-menu-2"></div>
-                                <a href="index.html" class="kick-site-logo">
-                                    <img src="assets/img/logo.png" alt="site logo" />
+                                <a href="../index.php" class="kick-site-logo">
+                                    <img src="../assets/img/logo.png" alt="site logo" />
                                 </a>
                                 <div class="responsive-menu-1"></div>
                             </div>
@@ -160,50 +127,28 @@ if(!isset($_SESSION['username'])){
                                 <nav>
                                     <ul id="navigation_menu_2">
                                         <li>
-                                            <a href="tickets.php">all tickets</a>
+                                            <a href="pages/tickets.php">all tickets</a>
                                             <ul>
-                                                <li><a href="tickets.php">tickets</a></li>
-                                                <li><a href="buy-tickets.php">tickets details</a></li>
+                                                <li><a href="pages/tickets.php">tickets</a></li>
+                                                <li><a href="pages/buy-tickets.php">tickets details</a></li>
                                             </ul>
                                         </li>
-                                        <!-- <li>
-                                            <a href="shop.html">shop</a>
-                                            <ul>
-                                                <li><a href="shop.html">shop</a></li>
-                                                <li><a href="single-shop.html">single shop</a></li>
-                                                <li><a href="cart.html">cart page</a></li>
-                                                <li><a href="checkout.html">checkout page</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li>
-                                            <a href="blog-grid.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog-grid.html">blog grid</a></li>
-                                                <li><a href="blog-left.html">blog left sidebar</a></li>
-                                                <li><a href="blog-right.html">blog right sidebar</a></li>
-                                                <li><a href="single-blog.html">single blog</a></li>
-                                            </ul>
-                                        </li> -->
+                                       
                                         <li>
                                             <a href="aboutphp#">page</a>
                                             <ul>
-                                                <!-- <li>
-                                                    <a href="404.html">404 page</a>
-                                                </li> -->
+                                                
                                                 <li>
-                                                    <a href="faq.php">FAQs Page</a>
+                                                    <a href="pages/faq.php">FAQs Page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="auth/logout.php">logout</a>
+                                                    <a href="../auth/logout.php">logout</a>
                                                 </li>
-                                                <!-- <li>
-                                                    <a href="registration.php">registration
-                                                    </a>
-                                                </li> -->
+                                                
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="contact.html">contact</a>
+                                            <a href="pages/contact.html">contact</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -255,19 +200,19 @@ if(!isset($_SESSION['username'])){
                         <p>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet. Vidisse quid incurreret ut ut possumus transferrem si ita labore dolor si appellat, aut dolore doctrina. Commodo dolor esse in magna, a multos senseri</p>
                         <ul>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                     excellent surface 
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                     excellent commentary
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                     Refreshments are available
                                 </a>
@@ -275,19 +220,19 @@ if(!isset($_SESSION['username'])){
                         </ul>
                         <ul>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                      surface complimented
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                     excellent complimented
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html#">
+                                <a href="about.php#">
                                     <i class="fa fa-check"></i>
                                     excellent surface complimented
                                 </a>
@@ -298,7 +243,7 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="col-md-6">
                     <div class="about-page-welcome-left">
-                        <img src="assets/img/abt-wel.jpg" alt="about welcome" />
+                        <img src="../assets/img/abt-wel.jpg" alt="about welcome" />
                     </div>
                 </div>
             </div>
@@ -584,39 +529,39 @@ if(!isset($_SESSION['username'])){
     
     
     <!-- jQuery -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
     
     <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     
     <!-- Magnific Popup JS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
     
     <!-- OwlCarousel JS -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
     
     <!-- SlickNav JS -->
-    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
     
     <!-- Scrollbar JS -->
-    <script src="assets/js/jquery-perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/jquery-perfect-scrollbar.min.js"></script>
     
     <!-- Countdown JS -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="../assets/js/jquery.countdown.min.js"></script>
     
     <!-- Waypoints JS -->
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
     
     <!-- Progressbar JS -->
-    <script src="assets/js/progressbar.min.js"></script>
+    <script src="../assets/js/progressbar.min.js"></script>
     
     <!-- Isotop JS -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
     
-    <script src="assets/js/custom-isotop.js"></script>
+    <script src="../assets/js/custom-isotop.js"></script>
     
     <!-- Custom JS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
     
 </body>
 </html>

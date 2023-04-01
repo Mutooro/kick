@@ -3,7 +3,7 @@ $db = "'localhost','root','','project'";
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header('location:login.php');
+    header('location:pages/login.php');
 }
 
 ?>
@@ -67,36 +67,14 @@ if(!isset($_SESSION['username'])){
                     <div class="col-sm-5">
                         <div class="header-top-left">
                         
-                            <div class="dropdown">
-                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdowncur" data-toggle="dropdown" aria-haspopup="true">
-                                USD
-                                    <i class="fa fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdowncur">
-                                    <li>USD</li>
-                                    <li>EURO</li>
-                                    <li>BDT</li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
-                                English
-                                    <i class="fa fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownlang">
-                                    <li>English</li>
-                                    <li>French</li>
-                                    <li>Arabic</li>
-                                    <li>Chinese</li>
-                                </ul>
-                            </div>
+                          
+                    
                         </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="header-top-right">
                             <a href="index.html#">
-                                <!-- <i class="fa fa-shopping-cart"></i>
-                                cart -->
+                               
                                 <i>Hi,&nbsp;<?php echo $_SESSION['username']; ?>&nbsp;(Admin)</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
@@ -105,14 +83,7 @@ if(!isset($_SESSION['username'])){
                                 <i class="fa fa-user"></i>
                                 My Account
                             </a>
-                            <!-- <a href="login.php">
-                                <i class="fa fa-sign-in"></i>
-                                login
-                            </a>
-                            <a href="registration.php">
-                                <i class="fa fa-user-plus"></i>
-                                register
-                            </a> -->
+                           
                         </div>
                     </div>
                 </div>
@@ -130,20 +101,20 @@ if(!isset($_SESSION['username'])){
                                             <a href="">Home</a>
                                         </li>
                                         <li>
-                                            <a href="about.php">about</a>
+                                            <a href="pages/about.php">about</a>
                                         </li>
                                         <li>
-                                            <a href="fixture.php">fixture</a>
+                                            <a href="pages/fixture.php">fixture</a>
                                             <ul>
-                                                <li><a href="fixture.php">Fixtures</a></li>
-                                                <li><a href="single-fixture.php">Fixtures details</a></li>
+                                                <li><a href="pages/fixture.php">Fixtures</a></li>
+                                                <li><a href="pages/single-fixture.php">Fixtures details</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="player.html">Player</a>
+                                            <a href="">Player</a>
                                             <ul>
-                                                <li><a href="player.php">players</a></li>
-                                                <li><a href="player-details.php">player details</a></li>
+                                                <li><a href="pages/player.php">players</a></li>
+                                                <li><a href="pages/player-details.php">player details</a></li>
                                             </ul>
                                         </li>
                                         <!-- <li>
@@ -163,50 +134,28 @@ if(!isset($_SESSION['username'])){
                                 <nav>
                                     <ul id="navigation_menu_2">
                                         <li>
-                                            <a href="tickets.html">all tickets</a>
+                                            <a href="">all tickets</a>
                                             <ul>
-                                                <li><a href="tickets.php">tickets</a></li>
-                                                <li><a href="buy-tickets.php">tickets details</a></li>
+                                                <li><a href="pages/tickets.php">tickets</a></li>
+                                                <li><a href="pages/buy-tickets.php">tickets details</a></li>
                                             </ul>
                                         </li>
-                                        <!-- <li>
-                                            <a href="shop.html">shop</a>
-                                            <ul>
-                                                <li><a href="shop.html">shop</a></li>
-                                                <li><a href="single-shop.html">single shop</a></li>
-                                                <li><a href="cart.html">cart page</a></li>
-                                                <li><a href="checkout.html">checkout page</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li>
-                                            <a href="blog-grid.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog-grid.html">blog grid</a></li>
-                                                <li><a href="blog-left.html">blog left sidebar</a></li>
-                                                <li><a href="blog-right.html">blog right sidebar</a></li>
-                                                <li><a href="single-blog.html">single blog</a></li>
-                                            </ul>
-                                        </li> -->
+                                       
                                         <li>
-                                            <a href="index.html#">page</a>
+                                            <a href="">page</a>
                                             <ul>
-                                                <!-- <li>
-                                                    <a href="404.html">404 page</a>
-                                                </li> -->
+                                                
                                                 <li>
-                                                    <a href="faq.php">FAQs Page</a>
+                                                    <a href="pages/faq.php">FAQs Page</a>
                                                 </li>
                                                 <li>
                                                     <a href="auth/logout.php">logout</a>
                                                 </li>
-                                                <!-- <li>
-                                                    <a href="registration.php">registration
-                                                    </a>
-                                                </li> -->
+                                               
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="contact.php">contact</a>
+                                            <a href="pages/contact.php">contact</a>
                                         </li>
                                     </ul>
                                     
@@ -755,247 +704,6 @@ if(!isset($_SESSION['username'])){
     <!-- Top Player Area End -->
     
     
-    <!-- Match Gallery Area Start -->
-    <!-- <section class="kick-match-gallery-area section_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="kick-section-heading">
-                        <h2>Match <span>Gallery</span></h2>
-                        <div class="title-line-one"></div>
-                        <div class="title-line-two"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-1.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-1.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-2.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-2.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-3.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-3.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-4.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-4.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-5.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-5.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-match-gallery">
-                       <a href="assets/img/gallery-6.jpg" class="gallery-lightbox">
-                            <div class="project-img">
-                                <img src="assets/img/gallery-6.jpg" alt="single project" />
-                                <div class="single-pro-overlay">
-                                    <i class="fa fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="load-more">
-                        <a href="index.html#" class="kick-btn">load more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Match Gallery Area End -->
-    
-    
-    <!-- Top Products Area Start -->
-    <!-- <section class="kick-top-products-area section_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="kick-section-heading">
-                        <h2>top <span>products</span></h2>
-                        <div class="title-line-one"></div>
-                        <div class="title-line-two"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="top-product-slider">
-                        <div class="single-top-product">
-                            <div class="product-image">
-                                <a href="index.html#">
-                                    <img src="assets/img/product-1.jpg" alt="product image" />
-                                </a>
-                                <div class="product-image-hover">
-                                    <a href="index.html#">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                </div>
-                                <div class="product-overlay"></div>
-                            </div>
-                            <div class="product-text">
-                                <h3><a href="single-shop.html">Shoe</a></h3>
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star-half-o"></i></li>
-                                </ul>
-                                <h2>$390</h2>
-                            </div>
-                        </div>
-                        <div class="single-top-product">
-                            <div class="product-image">
-                                <a href="index.html#">
-                                    <img src="assets/img/product-2.jpg" alt="product image" />
-                                </a>
-                                <div class="product-image-hover">
-                                    <a href="index.html#">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                </div>
-                                <div class="product-overlay"></div>
-                            </div>
-                            <div class="product-text">
-                                <h3><a href="single-shop.html">jersey</a></h3>
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star-half-o"></i></li>
-                                </ul>
-                                <h2>$390</h2>
-                            </div>
-                        </div>
-                        <div class="single-top-product">
-                            <div class="product-image">
-                                <a href="index.html#">
-                                    <img src="assets/img/product-3.jpg" alt="product image" />
-                                </a>
-                                <div class="product-image-hover">
-                                    <a href="index.html#">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                </div>
-                                <div class="product-overlay"></div>
-                            </div>
-                            <div class="product-text">
-                                <h3><a href="single-shop.html">jersey</a></h3>
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star-half-o"></i></li>
-                                </ul>
-                                <h2>$390</h2>
-                            </div>
-                        </div>
-                        <div class="single-top-product">
-                            <div class="product-image">
-                                <a href="index.html#">
-                                    <img src="assets/img/product-4.jpg" alt="product image" />
-                                </a>
-                                <div class="product-image-hover">
-                                    <a href="index.html#">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="index.html#">
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                </div>
-                                <div class="product-overlay"></div>
-                            </div>
-                            <div class="product-text">
-                                <h3><a href="single-shop.html">Shoe</a></h3>
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star-half-o"></i></li>
-                                </ul>
-                                <h2>$390</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Top Products Area End -->
     
     
     <!-- Latest Post Area Start -->
@@ -1141,39 +849,39 @@ if(!isset($_SESSION['username'])){
                             <h3>Usefull link</h3>
                             <ul class="single-footer-link">
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="index.php">
                                         <i class="fa fa-chevron-right"></i>
                                         home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="pages/about.php">
                                         <i class="fa fa-chevron-right"></i>
                                         about us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="pages/player.php">
                                         <i class="fa fa-chevron-right"></i>
-                                        team
+                                        team`
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="index.php#">
                                         <i class="fa fa-chevron-right"></i>
                                         terms
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="pages/faq.php">
                                         <i class="fa fa-chevron-right"></i>
                                         faqs
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#">
+                                    <a href="index.php">
                                         <i class="fa fa-chevron-right"></i>
-                                        privecy policy
+                                        privacy policy
                                     </a>
                                 </li>
                             </ul>

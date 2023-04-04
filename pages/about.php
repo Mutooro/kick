@@ -96,20 +96,20 @@ if(!isset($_SESSION['username'])){
                                             <a href="../index.php">Home</a>
                                         </li>
                                         <li class="current-page-item">
-                                            <a href="pages/about.php">about</a>
+                                            <a href="about.php">about</a>
                                         </li>
                                         <li>
-                                            <a href="pages/fixture.php">fixture</a>
+                                            <a href="fixture.php">fixture</a>
                                             <ul>
-                                                <li><a href="pages/fixture.php">Fixtures</a></li>
-                                                <li><a href="pages/single-fixture.php">Fixtures details</a></li>
+                                                <li><a href="fixture.php">Fixtures</a></li>
+                                                <li><a href="single-fixture.php">Fixtures details</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="player.php">Player</a>
                                             <ul>
-                                                <li><a href="pages/player.php">players</a></li>
-                                                <li><a href="pages/player-details.php">player details</a></li>
+                                                <li><a href="player.php">players</a></li>
+                                                <li><a href="player-details.php">player details</a></li>
                                             </ul>
                                         </li>
                                        
@@ -127,10 +127,10 @@ if(!isset($_SESSION['username'])){
                                 <nav>
                                     <ul id="navigation_menu_2">
                                         <li>
-                                            <a href="pages/tickets.php">all tickets</a>
+                                            <a href="tickets.php">all tickets</a>
                                             <ul>
-                                                <li><a href="pages/tickets.php">tickets</a></li>
-                                                <li><a href="pages/buy-tickets.php">tickets details</a></li>
+                                                <li><a href="tickets.php">tickets</a></li>
+                                                <li><a href="buy-tickets.php">tickets details</a></li>
                                             </ul>
                                         </li>
                                        
@@ -139,7 +139,7 @@ if(!isset($_SESSION['username'])){
                                             <ul>
                                                 
                                                 <li>
-                                                    <a href="pages/faq.php">FAQs Page</a>
+                                                    <a href="faq.php">FAQs Page</a>
                                                 </li>
                                                 <li>
                                                     <a href="../auth/logout.php">logout</a>
@@ -148,7 +148,7 @@ if(!isset($_SESSION['username'])){
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="pages/contact.html">contact</a>
+                                            <a href="contact.html">contact</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -305,17 +305,7 @@ if(!isset($_SESSION['username'])){
                             <div class="col-md-8">
                                 <div id="product_tab_content" class="tab-content">
                                     <div id="one" class="tab-pane fade in active" aria-labelledby="all">
-                                        <div class="panel-body">
-                                            <h3>fifa 2012, uefa champions league</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed. Lorem </p>
-                                            <div class="panel-video">
-                                                <div class="youtube-text">
-                                                    <a href="https://www.youtube.com/watch?v=HJ7Yyo8gBuA" class="popup-youtube">
-                                                        <i class="fa fa-play"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     <div id="two" class="tab-pane fade in " aria-labelledby="specification">
                                         <div class="panel-body">

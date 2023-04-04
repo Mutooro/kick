@@ -94,20 +94,20 @@ if(!isset($_SESSION['username'])){
                                             <a href="../index.php">Home</a>
                                         </li>
                                         <li>
-                                            <a href="pages/about.php">about</a>
+                                            <a href="about.php">about</a>
                                         </li>
                                         <li>
-                                            <a href="pages/fixture.php">fixture</a>
+                                            <a href="fixture.php">fixture</a>
                                             <ul>
-                                                <li><a href="pages/fixture.php">Fixtures</a></li>
-                                                <li><a href="pages/single-fixture.php">Fixtures details</a></li>
+                                                <li><a href="fixture.php">Fixtures</a></li>
+                                                <li><a href="single-fixture.php">Fixtures details</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="pages/player.php">Player</a>
+                                            <a href="player.php">Player</a>
                                             <ul>
-                                                <li><a href="pages/player.php">players</a></li>
-                                                <li><a href="pages/player-details.php">player details</a></li>
+                                                <li><a href="player.php">players</a></li>
+                                                <li><a href="player-details.php">player details</a></li>
                                             </ul>
                                         </li>
                                         
@@ -125,19 +125,19 @@ if(!isset($_SESSION['username'])){
                                 <nav>
                                     <ul id="navigation_menu_2">
                                         <li class="current-page-item">
-                                            <a href="pages/tickets.php">all tickets</a>
+                                            <a href="tickets.php">all tickets</a>
                                             <ul>
-                                                <li><a href="pages/tickets.php">tickets</a></li>
-                                                <li><a href="pages/buy-tickets.php">tickets details</a></li>
+                                                <li><a href="tickets.php">tickets</a></li>
+                                                <li><a href="buy-tickets.php">tickets details</a></li>
                                             </ul>
                                         </li>
                                         
                                         <li>
-                                            <a href="pages/tickets.php#">page</a>
+                                            <a href="tickets.php#">page</a>
                                             <ul>
                                                 
                                                 <li>
-                                                    <a href="pages/faq.php">FAQs Page</a>
+                                                    <a href="faq.php">FAQs Page</a>
                                                 </li>
                                                 <li>
                                                     <a href="../auth/logout.php">logout</a>
@@ -146,7 +146,7 @@ if(!isset($_SESSION['username'])){
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="pages/contact.php">contact</a>
+                                            <a href="contact.php">contact</a>
                                         </li>
                                     </ul>
                                 </nav>

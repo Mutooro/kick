@@ -731,7 +731,7 @@ if(!isset($_SESSION['username'])){
                     <div class="col-md-3">
                         <div class="single-footer-widget">
                             <h3>about <span>kick</span></h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ante at nunc pretium.</p>
+                            <p>Mak sports system is regulated under the Makerere Sports department.</p>
                             <ul class="single-footer-address">
                                 <li>
                                     <div class="add-icon">

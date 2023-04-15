@@ -51,9 +51,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-touch-icon.png">
     
-    <link rel="icon" type="../image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="../image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
     
-    <link rel="icon" type="../image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="../image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
     
     <link rel="manifest" href="../assets/favicons/manifest.json">
 
@@ -261,7 +261,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                     <div class="col-md-3">
                         <div class="single-footer-widget">
                             <h3>about <span>kick</span></h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ante at nunc pretium.</p>
+                            <p>Mak sports system is regulated under the Makerere Sports department.</p>
                             <ul class="single-footer-address">
                                 <li>
                                     <div class="add-icon">
